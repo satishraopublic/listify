@@ -1,0 +1,8 @@
+<div *ngIf="IsLoggedIn">
+    <span class="col-10" style="margin-right: 3px;">{{ currentUser.lastName }}, {{ currentUser.firstName }}</span>
+    <a class="btn btn-warning col-4" (click)="SignOut()">Sign Out</a>
+</div>
+<div *ngIf="!IsLoggedIn">
+    <span class="col-10" style="margin-right: 3px;"></span>
+    <a class="btn btn-warning" (click)="GoToLoginScreen()">Log In</a>
+</div>
