@@ -11,6 +11,7 @@ import { UserinfoComponent } from './components/userinfo/userinfo.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { MainComponent } from './components/main/main.component';
+import { ShowlistsComponent } from './components/showlists/showlists.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MainComponent } from './components/main/main.component';
     UserinfoComponent,
     ToolbarComponent,
     PageNotFoundComponent,
-    MainComponent
+    MainComponent,
+    ShowlistsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<div class="col-md-8 col-xs-4">
+    <div class="card" style="width: 19rem; margin: 10px" *ngFor="let list of (lists$ | async)">
+        <div class="card-header bg-warning">
+            <img *ngIf="list.type == ListTypeEnum.ShoppingList" class="card-img-top mx-auto d-block" src="..\..\assets\listsmall.png" alt="Shopping List" style="width: 22px;">
+            <img *ngIf="list.type == ListTypeEnum.CheckList" class="card-img-top mx-auto d-block" src="..\..\assets\checklist.png" alt="Shopping List" style="width: 22px;">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ list.name }}</h5>
+            <p class="card-text">{{ list.description }}</p>
+            <a href="#" class="btn btn-primary" (click)="ShowList(list.name)">Open List</a>
+        </div>
+    </div>
+</div>
